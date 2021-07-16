@@ -1,0 +1,117 @@
+.pageblock {
+    /* display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 2vw;
+}
+
+.explain {
+    /* border: 1px solid aqua; */
+    margin-bottom: 20px;
+}
+
+.explain p {
+    color: rgb(203, 247, 255);
+}
+
+/* ---------------------------------courseblock--------------------------------- */
+
+.courseblock {
+    /* border: 1px solid aqua; */
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: rgb(13, 19, 22);
+}
+
+.courseblock h3 {
+    color: rgb(255, 230, 9);
+}
+
+.pi {
+    color: rgb(203, 247, 255);
+}
+
+/* --------collapsible---------- */
+
+.certblock {
+    margin-top: 10px;
+    border-top: 1px solid aqua;
+    padding-top: 15px;
+}
+
+/* ------------------subjects------------------ */
+
+.knowledge {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+    margin-bottom: 30px;
+
+}
+
+.subjects {
+    /* border: 1px solid aqua; */
+    /* padding: 20px; */
+    /* margin-bottom: 20px; */
+    /* flex */
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid aqua;
+    /*  */
+}
+
+.subjects h3 {
+    color: aqua;
+    text-align: right;
+    /* position: relative; */
+    /* margin-left: 20px;
+    z-index: -8; */
+}
+
+/* .subjects h3::before {
+    content: '▶';
+    position: absolute;
+    left: -20px;
+    top: 3px;
+    font-size: 15px;
+} */
+
+/* ------------------------------progress------------------------------ */
+
+.progress {
+    background: rgba(255, 255, 255, 0.1);
+    justify-content: flex-start;
+    border-radius: 100px;
+    align-items: center;
+    /* position: relative; */
+    padding: 0 5px;
+    display: flex;
+    height: 15px;
+    width: 50%;
+}
+
+.progressvalue {
+    animation: load 3s normal forwards;
+    box-shadow: 0 10px 40px -10px #fff;
+    border-radius: 100px;
+    background: aqua;
+    height: 12px;
+    /* width: 15px; */
+}
+
+@keyframes load {
+    0% {
+        width: 0;
+    }
+    /* 100% {
+        width: 68%;
+    } */
+}
+
+/* -------------------------- */

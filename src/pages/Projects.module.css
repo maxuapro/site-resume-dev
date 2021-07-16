@@ -1,0 +1,42 @@
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    overflow: hidden;
+    border: 1px solid aqua;
+    /* border-radius: 10px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cardtitle {
+    /* z-index: 10; */
+    width: 100%;
+    background-color: rgb(27, 41, 41);
+    color: aqua;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: 1px solid aqua;
+    /* box-shadow: 0px -10px 30px black; */
+}
+
+.cardtitlelink {
+    text-decoration: none;
+}
+
+h2 {
+    color: white;
+}
+
+.cardimage {
+    width: 100%;
+}
+
+.imgdiv {
+    height: 150px;
+}

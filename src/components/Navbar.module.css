@@ -1,0 +1,92 @@
+.navbar {
+    height: 100px;
+    background-color: rgb(27, 41, 41);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    /* Set the navbar to fixed position */
+    top: 0;
+    /* Position the navbar at the top of the page */
+    width: 100%;
+    box-shadow: 0px 5px 15px rgb(0, 0, 0);
+}
+
+.fakenavbar {
+    height: 99px;
+    width: 100%;
+}
+
+.logo {
+    color: rgb(255, 206, 71);
+    margin-left: 4vw;
+    font-size: 3rem;
+    text-shadow: 0px 0px 12px rgb(255, 206, 71);
+}
+
+.logo span {
+    position: relative;
+    bottom: 4px;
+    color: aqua;
+    line-height: 20px;
+    margin-bottom: 20px;
+    text-shadow: 0px 0px 12px rgb(0, 255, 255);
+}
+
+.linksblock {
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 100px;
+}
+
+.links {
+    color: aqua;
+    text-decoration: none;
+}
+
+.links:hover {
+    color: rgb(163, 255, 255);
+    /* text-shadow: 0px 0px 12px rgb(0, 255, 255); */
+}
+
+/* ------------image------------ */
+
+.imgbutton {
+    width: 50px;
+    margin-right: 5%;
+    display: none;
+    cursor: pointer;
+}
+
+/* -------mobile-------- */
+
+@media screen and (max-width: 600px) {
+    .logo {
+        font-size: 2rem;
+    }
+    .logo span {
+        bottom: 2px;
+    }
+    .navbar {
+        height: 70px;
+    }
+    .fakenavbar {
+        height: 69px;
+        width: 100%;
+    }
+    .imgbutton {
+        width: 37px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .linksblock {
+        display: none;
+    }
+    .imgbutton {
+        display: block;
+    }
+}

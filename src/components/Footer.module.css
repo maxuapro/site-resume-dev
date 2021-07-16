@@ -1,0 +1,13 @@
+.footer{
+    background-color: rgb(13, 19, 22);
+    /* text-align: center; */
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.footer h1{
+    color: white;
+}

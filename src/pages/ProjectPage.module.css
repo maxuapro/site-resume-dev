@@ -1,0 +1,53 @@
+.projecttemplate {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 20px;
+}
+
+
+.leftside img {
+    width: 100%;
+    border: 1px solid aqua;
+}
+
+.leftside p {
+    color: aqua;
+    border: 1px solid aqua;
+    text-align: center;
+    background-color: rgb(27, 41, 41);
+}
+.leftside p:hover{
+    background-color: rgb(58, 87, 87);
+}
+.leftside a {
+    color: aqua;
+    text-decoration: none;
+}
+.rightside p {
+    color: rgb(203, 247, 255);
+    margin-bottom: 20px;
+    text-align: justify;
+    font-weight: 1;
+}
+.rightside ul{
+    margin-left: 20px;
+    color: aqua;
+}
+
+.links{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+
+@media screen and (max-width: 600px){
+    .projecttemplate {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 10px;
+    }
+}

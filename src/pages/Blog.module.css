@@ -1,0 +1,60 @@
+.blog{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+/* LATETST */
+.latestblock{
+    background-color: #336666;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+.latest{
+    color: aqua;
+}
+.latesttitle{
+    color: white;
+    text-decoration: none;
+}
+
+.latesttitle:hover{
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.latestdate{
+    color: aqua;
+}
+.latestimage{
+    width: 100%;
+}
+
+/* RIGHT SIDE */
+
+.postblock{
+    margin-bottom: 15px;
+    border: 1px solid aqua;
+    padding: 10px;
+}
+
+.posttitle{
+    color: aqua;
+    text-decoration: none;
+}
+
+.posttitle:hover{
+    color: rgba(0, 255, 255, 0.5);
+}
+
+.postblock p{
+    color: white;
+}
+
+
+
+/* ----- */
+@media screen and (max-width: 830px) {
+    .blog {
+        display: block;
+    }
+}
